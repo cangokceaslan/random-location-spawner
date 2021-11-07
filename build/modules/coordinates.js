@@ -21,7 +21,7 @@ var generateRandomLong = function generateRandomLong() {
 exports.generateRandomLong = generateRandomLong;
 
 var generateRandomLat = function generateRandomLat() {
-  var num = (Math.random() * 90).toFixed(3);
+  var num = (Math.random() * 180).toFixed(3);
   var posorneg = Math.random();
 
   if (posorneg >= 0.5) {

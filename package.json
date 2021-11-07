@@ -1,6 +1,6 @@
 {
   "name": "@cangokceaslan/random-coordinates-spawner",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "This package is a test package for nodejs side and usage for basic location generator",
   "main": "./build/index.js",
   "builtEntry": "./build/index.js",
