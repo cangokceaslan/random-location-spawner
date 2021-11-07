@@ -10,7 +10,7 @@ var generateRandomLong = function generateRandomLong() {
   var num = (Math.random() * 180).toFixed(3);
   var posorneg = Math.floor(Math.random());
 
-  if (posorneg == 0) {
+  if (posorneg % 2 === 1) {
     num = num * -1;
   }
 
@@ -22,9 +22,9 @@ exports.generateRandomLong = generateRandomLong;
 
 var generateRandomLat = function generateRandomLat() {
   var num = (Math.random() * 90).toFixed(3);
-  var posorneg = Math.floor(Math.random());
+  var posorneg = Math.random();
 
-  if (posorneg == 0) {
+  if (posorneg % 2 === 1) {
     num = num * -1;
   }
 

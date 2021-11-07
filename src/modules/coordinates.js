@@ -2,7 +2,7 @@
 export const generateRandomLong = () => {
     var num = (Math.random() * 180).toFixed(3);
     var posorneg = Math.floor(Math.random());
-    if (posorneg == 0) {
+    if (posorneg % 2 === 1) {
         num = num * -1;
     }
     return num;
@@ -10,8 +10,8 @@ export const generateRandomLong = () => {
 // LATITUDE -90 to +90
 export const generateRandomLat = () => {
     var num = (Math.random() * 90).toFixed(3);
-    var posorneg = Math.floor(Math.random());
-    if (posorneg == 0) {
+    var posorneg = Math.random();
+    if (posorneg % 2 === 1) {
         num = num * -1;
     }
     return num;
