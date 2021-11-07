@@ -1,0 +1,38 @@
+{
+  "name": "@cangokceaslan/random-coordinates-spawner",
+  "version": "1.0.0",
+  "description": "This package is a test package for nodejs side and usage for basic location generator",
+  "main": "./build/index.js",
+  "builtEntry": "./build/index.js",
+  "private": false,
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "random-location-spawner",
+    "udemy",
+    "location"
+  ],
+  "bugs": {
+    "url": "https://github.com/cangokceaslan/random-location-spawner/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cangokceaslan/random-location-spawner"
+  },
+  "homepage": "https://github.com/cangokceaslan/random-location-spawner",
+  "scripts": {
+    "build": "npx babel src -d ./build",
+    "dev": "npx babel src -d ./build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build; node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3"
+  }
+}
